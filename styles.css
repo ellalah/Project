@@ -83,8 +83,7 @@ button:hover {
 }
 
 .section1-img {
-  padding: 0;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -138,6 +137,8 @@ button:hover {
   display: flex;
   align-items: center;
   padding: 2vw 4vw;
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 .card-body a {
@@ -198,9 +199,30 @@ footer {
   padding: 3px;
   background-color: #071425;
   color: white;
+  height: auto;
+  width: 100vw;
 }
 
-/* Style the tab */
+.footer-content {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 3px;
+  }
+
+.socials a:hover{
+  color: #FF7100;
+  transition: all 0.3s ease 0s;
+}
+
+/* Style the tab
 .tab {
   float: left;
   border: 1px solid #ccc;
@@ -209,7 +231,7 @@ footer {
   height: 300px;
 }
 
-/* Style the buttons inside the tab */
+/* Style the buttons inside the tab
 .tab button {
   display: block;
   background-color: inherit;
@@ -284,3 +306,4 @@ footer {
 .tab .active{
   background-color: #ffffff;
 }
+*/
