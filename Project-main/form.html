@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="animation" href="app.js">
+</head>
+<body>
+<div class="contact-container">
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <h3>GET IN TOUCH</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" rows="4" placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail (){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "ehalstead92@googlemail.com",
+                Password : "J0ssBut13r21!",
+                To : 'ehalstead92@googlemail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Submission",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+
+            }).then(
+            message => alert("Message Sent Successfully")
+            );
+        }
+    </script>
+</body>

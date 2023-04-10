@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Author website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="animation" href="app.js">
+</head>
+<body>
+
+  <header>
+    <div class="logo"><a href="index.html">TIMOTHY HALSTEAD</a></div>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="history in action.html">History in Action</a></li>
+        </ul>
+    </nav>
+    <a href="contact.html"><button type="button" >Contact</button></a>
+  </header>
+  
+<section>
+  <div class="contact_container">
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <h3>GET IN TOUCH</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" rows="4" placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail (){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "ehalstead92@googlemail.com",
+                Password : "J0ssBut13r21!",
+                To : 'ehalstead92@googlemail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Submission",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+
+            }).then(
+            message => alert("Message Sent Successfully")
+            );
+        }
+    </script>
+ </section>
+
+ <footer>
+  <p>Content © 2023 Timothy Halstead. All Rights Reserved. Author: <a href="mailto:ella.halstead@hotmail.co.uk">Ella Halstead</a></p>
+</footer> 
+</html>

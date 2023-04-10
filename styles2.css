@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #05376C;
+}
+
+header li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  background-color: #071425;
+}
+
+.logo a {
+  font-family: 'PT Serif', serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #071425;
+}
+
+ul {
+  margin-bottom: 0rem;
+}
+
+.logo:hover {
+  color: #FF7100;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #FF7100;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(255, 113, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: ll 0.3s ease 0s;
+}
+
+
+button:hover {
+  background-color: rgba(255, 156, 77);
+
+}
+
+.section1-img {
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  width: 100vw;
+}
+
+.section2 {
+  padding: 5rem 2rem;
+}
+
+.short-bio {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin: 0;
+  background-color: #FAF9F6;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2.5% 20%;
+  font-family: 'PT Serif', serif;
+  font-size: large;
+}
+
+.read-more-button {
+  display: flex;
+  align-items: center;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+#more {display: none;}
+
+.recent-books-container {
+  display: flex;
+  width: 100vw;
+}
+
+.recent-books-container h1 {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  width: 100vh;
+  padding: 2vw;
+  color: #F3F4F5;
+  font-family: 'PT Serif', serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.recent-books {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500; 
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'PT Serif', serif;
+}
+
+.cards-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 50px, 0px;
+}
+
+.card-body a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.contact_container {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h3 {
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 10px;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+}
+
+form button {
+  border: 0;
+  outline: none;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #071425;
+  color: white;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #F3F4F5;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.publications_tab {
+  background-color: #ffffff;
+  width: 95vmin;
+  font-size: 16px;
+  min-width: 30em;
+  position: absolute;
+  transform: translate(-50%, -50%0);
+  top: 50%;
+  left: 50%;
+  display: grid;
+  grid-template-columns: 2fr 9fr;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #e4e9fd;
+}
+
+.publications_tab h3 {
+  height: 33.3%;
+  display: grid;
+  place-items: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-content {
+  background-color: #ffffff;
+  padding: 1em 1.5em;
+}
+
+.tab-content h4 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  color: #000024;
+  font-weight: 600;
+}
+
+.tab-content p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #202238;
+}
+
+.tab-content div {
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
+}
+
+.tab .active {
+  background-color: #ffffff;
+}
+
+.card-title {
+  font-size: 15px;
+}
