@@ -94,6 +94,10 @@ button:hover {
   padding: 5rem 2rem;
 }
 
+.short-bio-container p {
+  font-family: "Montserrat", sans-serif;
+}
+
 .short-bio {
   display: flex;
   flex-direction: column;
@@ -108,7 +112,19 @@ button:hover {
   font-size: large;
 }
 
-.read-more-button {
+#text {
+  display:none;
+}
+
+.btn-container button {
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+}
+
+.toggle {
   display: flex;
   align-items: center;
   padding: 15px 32px;
@@ -117,8 +133,6 @@ button:hover {
   border-radius: 50px;
   justify-content: center;
 }
-
-#more {display: none;}
 
 .recent-books-container {
   display: flex;
