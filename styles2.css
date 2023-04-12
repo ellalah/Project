@@ -177,12 +177,25 @@ h1 {
   padding: 50px, 0px;
 }
 
+.card-body {
+  background-color: white;
+  color: black;
+}
+
 .card-body a {
-  text-decoration: none;
+  background-color: none;
   font-family: "Montserrat", sans-serif;
-  text-decoration: none;
   font-size: medium;
 }
+
+.card-title h5:hover {
+  color: #FF7100;
+}
+
+.card-title h5 {
+transition: all 0.3s ease 0s;
+}
+
 
 .contact_container {
   width: 100%;
