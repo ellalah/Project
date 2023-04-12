@@ -112,19 +112,16 @@ button:hover {
   font-size: large;
 }
 
+.bio-container img {
+  max-width: 20vw;
+}
+
+
 #text {
   display:none;
 }
 
-.btn-container button {
-  user-select:none;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  cursor:pointer;
-}
-
-.toggle {
+.read-more-button {
   display: flex;
   align-items: center;
   padding: 15px 32px;
